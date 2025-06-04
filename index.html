@@ -1,19 +1,103 @@
-<html>
-<title>
-    Testing
-</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cat Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1{
+            color: white;
+        }
+        h2{
+            color: #0078D7;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .cat-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .cat-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        th {
+            text-align: left;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
 <body>
-    <h1 style="background-color: aqua; text-align: center;" >
-        This is my website
-    </h1>
-    <h1 style="font-size: 20px;" text-align="center">
-        Look at my beautiful cat
-    </h1>
-    <img src="cat.jpg" alt="Cat" style="width: 500px; height: 600px;" align="center">
-    <table>
-        <tr>
-            <th>Name: Mao mao</th>
-        </tr>
-    </table>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Meet My Beautiful Cat</h2>
+        <img src="cat.jpg" alt="My Cat Mao mao" class="cat-image">
+        <div class="cat-info">
+            <h2>About My cat</h2>
+            <table>
+                <tr>
+                    <th>Her name: Mao mao</th>
+                </tr>
+                <tr>
+                    <th>She is very cute and like to play outside</th>
+                </tr>
+            </table>
+            <h2>About me</h2>
+            <table>
+                <tr>
+                    <th>My name is Natthaphat Kraiwong. Nick name Art. 
+                </tr>
+                <tr>
+                    <th>I am a student of computer science at Assumption University</th>
+                </tr>
+            </table>
+            <h2>Hobbies</h2>
+            <table>
+                <tr>
+                    <th>I like to play game and watch anime</th>
+                </tr>
+            </table>
+            <h2>Contact</h2>
+            <table>
+                <tr>
+                    <th>Contact me at u6510249.au.edu</th>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
