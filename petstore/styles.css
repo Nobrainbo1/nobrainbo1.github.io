@@ -6,13 +6,13 @@ body {
 }
 
 header {
-    background-color: rgba(73, 159, 240, 0.9);
+    background-color: rgba(42, 140, 231, 0.9);
     padding: 20px;
     color: white;
 }
 
 footer {
-    background-color: rgba(73, 159, 240, 0.9);    padding: 10px;
+    background-color: rgba(42, 140, 231, 0.9);    padding: 10px;
     color: white;
     justify-content: center;
     display: flex;
@@ -30,6 +30,16 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+a {
+    background-color: rgba(244, 244, 244, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgba(10, 10, 10, 0.2);
 }
 
 .featured {
@@ -65,4 +75,8 @@ button {
 
 button:hover {
     background-color: rgba(0, 95, 122, 0.8);
+}
+
+iframe:hover {
+    transform: scale(1.2);
 }

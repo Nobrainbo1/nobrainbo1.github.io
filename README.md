@@ -1,2 +1,3 @@
-# nobrainbo1.github.io
+# This is my GitHub page
 
+By Natthaphat Kraiwong
