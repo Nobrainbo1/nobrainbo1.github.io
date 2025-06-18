@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>VAT Calculator</title>
+    </head>
+    <body>
+        <h1>VAT Calculator</h1>
+            <input type="number" id="basePrice" placeholder="Enter base price" value="100" /><br>
+            <input type="number" id="vatPercent" placeholder="Enter VAT" value="7" /><br>
+            <button onclick="calculateVAT()">Calculate</button>
+            <p id="result"></p>
+
+            <br>
+
+            <input type="number" id="vat" placeholder="Enter Price with VAT" value="100" /><br>
+            <input type="number" id="vatPercent" placeholder="Enter VAT" value="7" /><br>
+            <button onclick="calculateWithVAT()">Calculate</button>
+            <p id="resultWithVAT"></p>
+
+    </body>
+</html>
+
+<script src="vatcal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
