@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office"
+    xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Something Company</title>
+    <meta name="description" content="Company quotation">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">CHAYAPOL MOEMENG</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">6600.00000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">CHAYAPOL MOEMENG</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ContentTypeId msdt:dt="string">0x0101009FF7D1E89D0B8D439BF6074909CECEB2</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+
+    <div style="padding-left: 200px; padding-right: 200px;">
+        <b style="margin-left: 50px; font-size: 25px;">Something Company
+            <span style="float:right;font-size:30px; margin-right: 100px;">
+                QUOTATION
+            </span>
+        </b>
+        <p style="margin-left: 100px;">
+            Bangsaothong
+            <br>Samutrprakarn
+            <span style="float:right;">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/101ad363237205.5aa9feaddf1f7.gif"
+                    style="width:190px;height:120px; margin-right: 100px; cursor: pointer;"
+                    onclick="window.open('data/rickroll.mp4', '_blank')">
+            </span>
+            <br>THAILAND
+        </p>
+        <br>
+        <p style="margin-left: 100px;">Zip Code: 30000</p>
+        <p id="bottom-line" style="margin-top: 50px;">
+            Phone: 12345678
+            <span class="tab">Mobile: 12345678</span>
+            <span style="float: right;">
+                <span id="currentDate">
+                    2010/7/27
+                </span>
+            </span>
+        </p>
+    </div>
+
+    <div style="padding-left: 200px; padding-right: 200px;">
+
+        <p style="text-align: center;">
+            Ship to:
+            <span class="tab" style="font-weight: bold;">Sample customer name 001</span>
+            <span class="tab"></span>
+            <span class="tab"></span>
+            <span class="tab"></span>
+            <span style="float:left;">
+                To:
+                <span class="tab" style="font-weight: bold;">Sample customer name 001</span>
+            </span>
+        </p>
+        <p style="text-align: center;">
+            Ship to address line1
+            <span style="float:left;">
+                <span class="tab"></span>   Sample address line1</span>
+            <br>
+            Ship to address line2
+            <span style="float:left;">
+                <span class="tab"></span>   Sample address line2</span>
+            <br>
+            Ship to address line3
+            <span style="float:left;">
+                <span class="tab"></span>   Sample address line3</span>
+        </p>
+    </div>
+
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Salesperson</th>
+                <th>Your P.O. No.</th>
+                <th>Date Shipped</th>
+                <th>Shipped Via</th>
+                <th>F.O.B Point</th>
+                <th>Terms</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="bottom-line">
+                <td class="data">Administrator</td>
+                <td class="data">Sample PO#</td>
+                <td class="data">2011/3/18</td>
+                <td class="data">Courier Services</td>
+                <td class="data">U.S.A</td>
+                <td class="data">2 Weeks</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Item</button>
+
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+
+        </tbody>
+        <tfooter>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr>
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+            <tr id="bottom-line">
+                <td class="data"><br></td>
+                <td class="data"></td>
+                <td class="data"></td>
+                <td class="data"></td>
+            </tr>
+
+            <tr id="sub-total">
+                <td colspan="3" class="data2 r colo"> Subtotal</td>
+                <td colspan="1" class="data2 r" id="bottom-line">
+                    <span id="subTotal">---</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo"> Sales Tax</td>
+                <td colspan="1" class="data2 r" id="bottom-line"><span id="vat">---</span></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo"> Shipping &amp; Handling</td>
+                <td colspan="1" class="data2 r" id="bottom-line">0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo"> Total Due</td>
+                <td colspan="1" class="data2 r" id="bottom-line"><span id="totalDue">---</span></td>
+            </tr>
+        </tfooter>
+    </table>
+
+    <br>
+
+    <p class="cen">
+        <b>Make all checks payable to:</b>
+        <br><i>Something Company</i>
+        <br><b>If you have any question concerning this invoices, call: 16581031687</b>
+        <br>
+        <br><b>THANK YOU FOR YOUR BUSINESS</b>
+    </p>
+
+
+    <footer>
+        <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0">
+            <img src="https://shop.createsa.co.za/cdn/shop/products/ShiaLabeoufJustDoitLogoWallArtDecor-442x571.jpg?v=1628165940"
+                style="width: 100px; height: 100px;">
+            </img>
+        </a>
+        <p id="hint">Beware with pictures</p>
+    </footer>
+    
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="addItem(); return false;">
+                        <div class="form-group">
+                            <label for="itemSelect">Item</label>
+                            <select id="itemSelect" class="form-control" required>
+                                <option value="">Select an item...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="newItemQty">Quantity</label>
+                            <input id="newItemQty" type="number" class="form-control" value="1" min="1" step="1" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="addItem()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script2.js"></script>
+
+    <script>
+        var itemList = [];
+        var quoationData = [];
+
+        // Fetch the data from data.json and populate the select dropdown
+        fetch('data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                itemList = data;
+                // Populate select dropdown
+                var select = document.getElementById('itemSelect');
+                data.forEach(item => {
+                    var option = document.createElement('option');
+                    option.value = item.description;
+                    option.textContent = item.description;
+                    select.appendChild(option);
+                });
+            });
+
+        function addItem() {
+            // Get selected description
+            var desc = $("#itemSelect").val();
+            // Find the item in itemList
+            var item = itemList.find(i => i.description === desc);
+            if (!item) {
+                alert('Please select a valid item.');
+                return;
+            }
+            // Get quantity (default 1)
+            var qty = parseFloat($("#newItemQty").val()) || 1;
+            quoationData.push({
+                description: item.description,
+                quantity: qty,
+                unitPrice: item.unitPrice
+            });
+            $('#exampleModal').modal('hide');
+            // Reset the form
+            $("#itemSelect").val("");
+            $("#newItemQty").val("1");
+            renderTable();
+        }
+
+        function renderTable() {
+            var data = quoationData;
+            var subTotal = 0;
+            data.forEach((e) => {
+                subTotal = subTotal + (e.unitPrice * e.quantity);
+            });
+            var vat = (subTotal * .07).toFixed(2);
+            var total = subTotal * 1.07;
+
+            $("#subTotal").html("" + subTotal.toFixed(2));
+            $("#vat").html("" + vat);
+            $("#totalDue").html("" + total.toFixed(2));
+
+            var dataRows = data.map((e, i) => {
+                let amount = e.quantity * e.unitPrice;
+                return `<tr class="data-row">
+                                <td class="text-center">${e.quantity}</td>
+                                <td class="data">
+                                    <button class="delete-btn" onclick="deleteItem(${i})" title="Delete item">×</button>
+                                    ${e.description}
+                                </td>
+                                <td class="text-right">${e.unitPrice.toFixed(2)}</td>
+                                <td class="text-right">${amount.toFixed(2)}</td>
+                            </tr>`;
+            });
+
+            $(".data-row").remove();
+            // Insert into the table
+            dataRows.forEach((r) => {
+                $('#dataTable').append(r);
+            });
+        }
+
+        function deleteItem(i) {
+            quoationData.splice(i, 1);
+            renderTable();
+        }
+
+        $(document).ready(function () {
+            // Optionally, load initial data into the table
+            // $.getJSON('data/data.json', data => {
+            //     quoationData = data;
+            //     renderTable();
+            // });
+        });
+    </script>
+
+</body>
+
+</html>
